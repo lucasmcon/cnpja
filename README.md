@@ -1,6 +1,6 @@
 # Integração UNO ERP com API CNPJá.
 
-O objetivo desse script é fazer uma verificação diária toda manhã de pedidos aprovados no dia anterior no sistema UNO ERP utilizando os serviços da API CNPJá.
+O objetivo desse script é fazer uma verificação diária de pedidos aprovados no dia anterior no sistema UNO ERP utilizando os serviços da API CNPJá.
 
 Requisitos:
 1. Apache server.
