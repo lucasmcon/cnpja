@@ -18,6 +18,25 @@ Mecânica do script:
 6. O email enviado é separado por pedido, informado os dados do cliente e quais foram as divergências encontradas.
 
 
+#Configuração
+
+## Variáveis de sessão
+
+Editar o arquivo database.ini localizado em services/private/ com os dados de acesso ao MySQL Server
+
+DB_Serv = <server_address>
+DB_User = <user>
+DB_Pass = <passord>
+DB_Port = <port>
+DB_Name = <schema> 
+
+## Variáveis
+
+```php
+$to //E-mail destinatário, para maias de um e-mail, separar por vírgula
+$from //E-mail remetente configurado no php.ini
+```
+
 
 
 
