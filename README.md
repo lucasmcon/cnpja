@@ -39,6 +39,8 @@ $to //E-mail destinatário, para maias de um e-mail, separar por vírgula
 $from //E-mail remetente configurado no php.ini
 ```
 
+## Comunicação com a API CNPJá
 
+Editar a variável ```php $token ``` o arquivo cnpja.php localizado em services/ com a chave (token) da API
 
 
