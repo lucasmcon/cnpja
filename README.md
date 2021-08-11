@@ -1,4 +1,4 @@
-# Integração UNO ERP com API CNPJá.
+# Integração [UNO ERP](www.unosolucoes.com.br) com [API CNPJá](www.cnpja.com.br].
 
 O objetivo desse script é fazer uma verificação diária de pedidos aprovados no dia anterior no sistema UNO ERP utilizando os serviços da API CNPJá.
 
@@ -41,7 +41,11 @@ $from //E-mail remetente configurado no php.ini
 
 ## Comunicação com a API CNPJá
 
-Editar a variável ``` $token ``` no arquivo cnpja.php localizado em services/ com a chave (token) da API
+Editar a variável ``` $token ``` no arquivo cnpja.php localizado em services/ com a chave (token) da API.
+
+Na variável ```$service_url``` a consulta está configurada com os parâmetros **sintegra_max_age** e **simples_max_age**, para retornar informações em tempo real.
+
+Para mais, consultar [documentação](https://www.cnpja.com.br/docs) oficial da [API CNPJá](https://www.cnpja.com.br/) 
 
 ```php
 
