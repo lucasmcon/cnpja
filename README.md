@@ -1,4 +1,4 @@
-# Integração [UNO ERP](www.unosolucoes.com.br) com [API CNPJá](www.cnpja.com.br].
+# Integração [UNO ERP](https://www.unosolucoes.com.br/) com [API CNPJá](https://www.cnpja.com.br/).
 
 O objetivo desse script é fazer uma verificação diária de pedidos aprovados no dia anterior no sistema UNO ERP utilizando os serviços da API CNPJá.
 
