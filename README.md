@@ -24,11 +24,11 @@ Mecânica do script:
 
 Editar o arquivo database.ini localizado em services/private/ com os dados de acesso ao MySQL Server
 
-DB_Serv = <server_address>
-DB_User = <user>
-DB_Pass = <passord>
-DB_Port = <port>
-DB_Name = <schema> 
+- DB_Serv = <server_address>
+- DB_User = <user>
+- DB_Pass = <passord>
+- DB_Port = <port>
+- DB_Name = <schema> 
 
 ## Variáveis
 
