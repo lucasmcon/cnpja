@@ -41,6 +41,36 @@ $from //E-mail remetente configurado no php.ini
 
 ## Comunicação com a API CNPJá
 
-Editar a variável ``` $token ``` o arquivo cnpja.php localizado em services/ com a chave (token) da API
+Editar a variável ``` $token ``` no arquivo cnpja.php localizado em services/ com a chave (token) da API
+
+```php
+
+    class cnpja{
+
+        function consultaCNPJ($cnpj){
+            
+            $service_url = "https://api.cnpja.com.br/companies/".$cnpj."?sintegra_max_age=1&simples_max_age=1";
+            $token = ""; //Token da conta CNPJá
+            $content = "multipart/form-data";
+            $headers = array('authorization:'.$token, 'Content-Type:'.$content);
+
+            $curl = curl_init($service_url);
+
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
+            curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($curl, CURLINFO_HEADER_OUT, true);
+
+            $curl_response = curl_exec($curl);
+            curl_close($curl);
+
+            return $curl_response;
+
+        }
+    }
+
+```
+
+
 
 
